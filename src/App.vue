@@ -1,12 +1,12 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import BidComponent from './components/BidComponent.vue'
 import Presentation from './components/Presentation.vue';
 </script>
 
 <template>
   <body>
-    <HelloWorld />
     <Presentation />
+    <BidComponent />
   </body>
 </template>
 
