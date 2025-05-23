@@ -1,13 +1,11 @@
 <script setup>
-import BidComponent from './components/BidComponent.vue'
+import BidCard from './components/BidCard.vue'
 import Presentation from './components/Presentation.vue';
 </script>
 
 <template>
-  <body>
+    <BidCard />
     <Presentation />
-    <BidComponent />
-  </body>
 </template>
 
 <style scoped>
