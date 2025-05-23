@@ -1,9 +1,9 @@
 <script setup>
-import BidComponent from './components/BidComponent.vue'
+import BidCard from './components/BidCard.vue'
 </script>
 
 <template>
-    <BidComponent />
+    <BidCard />
 </template>
 
 <style scoped>
