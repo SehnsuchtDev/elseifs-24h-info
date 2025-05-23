@@ -1,5 +1,5 @@
 <template>
-    <div class="flex h-screen w-screen items-center justify-center border-solid border-red-100">
+    <div class="flex h-screen w-full items-center justify-center border-solid border-red-100">
     <div class="bidCard flex rounded border-2 p-1">
         <img src="../assets/logo.png" alt="Ampoule des frères lumière" width="100" height="100" class="" />
         <div class="text-base">
