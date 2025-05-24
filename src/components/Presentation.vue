@@ -4,7 +4,7 @@
 </script>
 
 <template>
-    <div class="h-screen flex flex-col justify-center">
+    <!--<div class="h-screen flex flex-col justify-center">
         <h1>Les Frères Lumière : Pionniers du Cinéma</h1>
         <article class="mt-[5vh] flex justify-center align-middle gap-[2vw] px-[10vw]">
             <img class="rounded-xl  max-w-full max-h-full object-contain" style="width: 40vw; height: 50vh;"  src="../assets/Fratelli_Lumiere.jpg" alt="Les frères lumière">
@@ -19,7 +19,7 @@
                 <p>À une époque où la technologie était en pleine évolution, les frères Lumière ont su voir le potentiel du mouvement capturé sur pellicule. Leur vision a transformé la manière dont nous percevons et interagissons avec le monde, faisant d'eux des figures incontournables de l'histoire du cinéma.</p>
             </div>
         </article>
-    </div>
+    </div>-->
 </template>
 
 <style scoped>
