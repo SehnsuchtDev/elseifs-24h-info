@@ -12,13 +12,12 @@ window.addEventListener('scroll',function(e) {
 
 
 const los_freros = computed(() => {
-    return midScreenVH.value > 0.75;
+    return midScreenVH.value > 0.85;
 })
 
 const spotLightTarget = computed(() => {
-    console.log(midScreenVH.value);
     return {
-        y: (1.5 - midScreenVH.value) * window.screen.height,
+        y: (1.6 - midScreenVH.value) * window.screen.height,
         x: window.screen.width/2
     }
 })
@@ -34,20 +33,21 @@ const spotLightTarget = computed(() => {
     :featherAmount="50"
     color="#fff8"
 />
-<div class="night-overlay" :style="{opacity: (los_freros?0.7:1)}"></div>
+<div class="night-overlay" :style="{opacity: (los_freros?0.15   :1)}"></div>
 <main>
     
 <img src="../assets/ridal.png" alt="Rideaux" class="w-full h-screen object-stretch" />
 
 <img class="freres" :style="{zIndex: (los_freros?1500:1)}" src="../assets/fratelli_lumierini.png" alt="Fratelli Lumière" />
 </main>
+<img src="../assets/plancher.png" alt="Plancher" class="w-full h-screen object-stretch" />
 </template>
 
 <style scoped>
 main {
     background-color: #0a0007;
     background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
-    min-height: 200vh;
+    min-height: 180vh;
     width: 100%;
 }
 
@@ -62,7 +62,7 @@ main {
     }
 .freres {
     position: absolute;
-    top: 75vh;
+    top: 85vh;
     left: 50%;
     transform: translate(-50%, 0);
 }    

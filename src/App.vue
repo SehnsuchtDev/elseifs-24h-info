@@ -2,12 +2,14 @@
 import BidCard from './components/BidCard.vue'
 import Presentation from './components/Presentation.vue';
 import Rideaux from './components/Rideaux.vue';
+import VideoPre from './components/VideoPre.vue';
 </script>
 
 <template>
     <div class="main-container">
         <Rideaux />
         <Presentation />
+        <VideoPre />
         <BidCard />
     </div>
 </template>
