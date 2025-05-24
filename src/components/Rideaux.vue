@@ -17,7 +17,7 @@ const los_freros = computed(() => {
 
 const spotLightTarget = computed(() => {
     return {
-        y: (1.6 - midScreenVH.value) * window.screen.height,
+        y: (1.5 - midScreenVH.value) * window.screen.height,
         x: window.screen.width/2
     }
 })
