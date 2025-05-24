@@ -20,7 +20,6 @@ function getTimeLeft() {
   return Math.max(0, targetDate.value - now)
 }
 
-const days = computed(() => Math.floor(timeLeft.value / (1000 * 60 * 60 * 24)))
 const hours = computed(() => Math.floor((timeLeft.value / (1000 * 60 * 60)) % 24))
 const minutes = computed(() => Math.floor((timeLeft.value / (1000 * 60)) % 60))
 const seconds = computed(() => Math.floor((timeLeft.value / 1000) % 60))
