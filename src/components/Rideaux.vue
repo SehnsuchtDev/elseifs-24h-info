@@ -33,7 +33,7 @@ const spotLightTarget = computed(() => {
     :featherAmount="50"
     color="#fff8"
 />
-<div class="night-overlay" :style="{opacity: (los_freros?0.15   :1)}"></div>
+<div v-if="!los_freros" class="night-overlay" :style="{opacity: (los_freros?0.15   :1)}"></div>
 <main>
     
 <img src="../assets/ridal.png" alt="Rideaux" class="w-full h-screen object-stretch" />

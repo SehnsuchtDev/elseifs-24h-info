@@ -87,6 +87,7 @@ const conicClip = computed(() => `circle(${usefull.value.distance+0.850*props.sp
     /*clip-path: circle(200px);*/
     filter: blur();
     z-index: 1000;
+    pointer-events: none;
   }
   .spot {
     animation: 1.3s infinite alternate-reverse both running spot-opa;
