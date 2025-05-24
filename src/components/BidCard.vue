@@ -1,11 +1,11 @@
 <template>
-    <div class="grid h-screen w-screen grid-cols-1 grid-rows-1">
-        <div id="bidAlertList" class="absolute top-4 left-4">
+    <div class="grid h-screen grid-cols-3 items-start mt-50">
+        <div id="bidAlertList" class="col-start-1 p-4">
             <BidAlert v-for="(alertData, idx) in bidAlerts" :key="idx" class="transition-all duration-300 ease-in-out"/>
         </div>
-        <div class="flex flex-col bidCard flex rounded p-1 w-100 items-center justify-center shadow-md shadow-gray-700 bg-gray-700 place-self-center">
-            <div class="text-xl w-full font-bold text-center">L'ampoule des frères Lumière</div>
-            <img src="../assets/ampoule.jpg" alt="Ampoule des frères Lumière" width="100" height="100" class="" />
+        <div class="col-start-2 flex flex-col bidCard flex rounded p-1 w-100 items-center justify-center shadow-md shadow-gray-600 bg-gray-600 place-self-center">
+            <div class="text-xl w-full font-bold text-center m-1">L'ampoule usagée des frères Lumière</div>
+            <img src="../assets/ampoule.jpg" alt="Ampoule des frères Lumière" width="100" height="100" class="rounded shadow-sm" />
             <div class="text-base">Enchère actuelle : 500 000 €</div>
             <BidCountdown/>
             <button @click="placeBidForm" v-if="!displayBidForm" class="rounded bg-gray-500 px-4 py-2 font-bold text-white hover:bg-gray-700 cursor-pointer">Enchérir</button>
@@ -32,13 +32,15 @@ onMounted(() => {
         setTimeout(() => {
             bidAlerts.value.push({});
             pushAlertIrregularly();
+            setTimeout(() => {
+                bidAlerts.value.shift();
+            }, 7000);
+            
         }, delay);
     }
     pushAlertIrregularly();
 
-    setInterval(() => {
-        bidAlerts.value.shift();
-    }, 3000);
+    
 });
 
 

@@ -25,6 +25,6 @@ function decreaseBid() {
 }
 
 function confirmBid() {
-
+    
 }
 </script>
