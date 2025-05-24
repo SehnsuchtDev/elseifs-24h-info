@@ -4,8 +4,8 @@ import Presentation from './components/Presentation.vue';
 </script>
 
 <template>
-    <BidCard />
     <Presentation />
+    <BidCard />
 </template>
 
 <style scoped>
